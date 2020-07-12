@@ -28,9 +28,50 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo安装主题</title>
+    <url>/2020/07/11/hexo-themes/</url>
+    <content><![CDATA[<p>修改Hexo静态博客的主题</p>
+<a id="more"></a>
+<h3 id="选择Hexo支持的主题"><a href="#选择Hexo支持的主题" class="headerlink" title="选择Hexo支持的主题"></a>选择Hexo支持的主题</h3><p>Hexo主题官网：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>在主题详情页一般会有提示，将主题git到hexoblog下的themes目录下</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/主题链接 /themes/主题文件夹</span><br></pre></td></tr></tbody></table></figure>
+
+
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>Hexo更改主题后启动服务器，界面显如下字符:</p>
+<p><code>extends includes/layout.pug block content include includes/recent-posts.pug include includes/partial</code></p>
+<p>解决方案:</p>
+<p>执行如下命令</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br></pre></td></tr></tbody></table></figure>
+<p>再重新清理缓存<code>hexo c</code>生成静态文件<code>hexo g</code>即可</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matery主题的修改与优化</title>
     <url>/2020/07/11/matery-change/</url>
-    <content><![CDATA[<h3 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h3><p>修改<code>index-cover.ejs</code>文件</p>
+    <content><![CDATA[<p>记录主题的优化与修改</p>
+<a id="more"></a>
+<h3 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h3><p>修改<code>index-cover.ejs</code>文件</p>
 <figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//调整主页轮播图左右转跳的两个箭头显示相对背景圈圈偏上</span></span><br><span class="line">#prev-cover i {</span><br><span class="line">        margin-top: <span class="number">5.5</span>px;<span class="comment">//添加，让主页左跳按钮箭头下移</span></span><br><span class="line">    }</span><br><span class="line">#next-cover i {</span><br><span class="line">    margin-top: <span class="number">5.5</span>px;<span class="comment">//添加，让主页左跳按钮箭头下移</span></span><br><span class="line">    }<span class="comment">//将主页显示的“readstart”按钮修改为“enter blog”</span></span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-angle-double-down"</span>&gt;&lt;<span class="regexp">/i&gt;&lt;%- __('enter Blog') %&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>修改<code>footer.ejs</code>文件</p>
@@ -79,61 +120,27 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo安装主题</title>
-    <url>/2020/07/11/hexo-themes/</url>
-    <content><![CDATA[<h3 id="选择Hexo支持的主题"><a href="#选择Hexo支持的主题" class="headerlink" title="选择Hexo支持的主题"></a>选择Hexo支持的主题</h3><p>Hexo主题官网：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
-<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>在主题详情页一般会有提示，将主题git到hexoblog下的themes目录下</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/主题链接 /themes/主题文件夹</span><br></pre></td></tr></tbody></table></figure>
-
-
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>Hexo更改主题后启动服务器，界面显如下字符:</p>
-<p><code>extends includes/layout.pug block content include includes/recent-posts.pug include includes/partial</code></p>
-<p>解决方案:</p>
-<p>执行如下命令</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br></pre></td></tr></tbody></table></figure>
-<p>再重新清理缓存<code>hexo c</code>生成静态文件<code>hexo g</code>即可</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows下的HEXO静态博客搭建</title>
     <url>/2020/07/10/windows-new-hexo/</url>
-    <content><![CDATA[<h2 id="一、配置nodejs环境"><a href="#一、配置nodejs环境" class="headerlink" title="一、配置nodejs环境"></a>一、配置nodejs环境</h2><h3 id="1-下载安装"><a href="#1-下载安装" class="headerlink" title="1.下载安装"></a>1.下载安装</h3><p>官网下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br>安装完成后cmd输入<code>node -v</code>可查看版本号说明安装成功</p>
+    <content><![CDATA[<p>Windows10平台下Hexo静态博客的大致搭建流程，从环境准备到搭建成功预览，包括部署到GitHub以及可能出现的错误。</p>
+<a id="more"></a>
+
+<h2 id="一、配置nodejs环境"><a href="#一、配置nodejs环境" class="headerlink" title="一、配置nodejs环境"></a>一、配置nodejs环境</h2><h3 id="1-下载安装"><a href="#1-下载安装" class="headerlink" title="1.下载安装"></a>1.下载安装</h3><p>官网下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br>安装完成后cmd输入<code>node -v</code>可查看版本号说明安装成功</p>
 <h3 id="2-修改npm的模块目录和缓存目录"><a href="#2-修改npm的模块目录和缓存目录" class="headerlink" title="2.修改npm的模块目录和缓存目录"></a>2.修改npm的模块目录和缓存目录</h3><p>Npm的缓存文件和模块默认是存储在C盘，将其模块目录和缓存目录设置到nodejs文件夹下方便以后操作，nodejs默认安装目录为<code>C:\Program Files\nodejs</code><br>在nodejs文件夹下，创建两个为文件夹<code>node_global</code>和<code>node_cecal</code><br>使用下面命令将npm的全局模块目录和缓存目录配置到我们刚才创建的那两个目录</p>
 <ul>
 <li><strong>npm config set prefix “node_global文件夹的路径”</strong></li>
 <li><strong>npm config set cache “node_cache文件夹的路径”</strong><br>控制面板-系统和安全-系统高级系统设置—环境变量</li>
 <li>新增系统变量<code>NODE_PATH</code>，变量值填写nodejs目录下的<code>node_modules</code>文件夹路径</li>
-<li>系统Path变量添加之前创建的<code>node_global</code>目录<br>cmd输入<code>node</code>再输入<code>require</code>显示如下说明配置完成<br><img src="https://s1.ax1x.com/2020/07/10/UM2tYT.png" alt=""></li>
+<li>系统Path变量添加之前创建的<code>node_global</code>目录<br>cmd输入<code>node</code>再输入<code>require</code>显示如下说明配置完成<br><img data-src="https://s1.ax1x.com/2020/07/10/UM2tYT.png" alt=""></li>
 </ul>
 <h2 id="二、安装Git"><a href="#二、安装Git" class="headerlink" title="二、安装Git"></a>二、安装Git</h2><h3 id="1-下载安装-1"><a href="#1-下载安装-1" class="headerlink" title="1.下载安装"></a>1.下载安装</h3><p>官网下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a><br>自行下载最好准备科学工具，推荐在官网查看最新的版本后前往百度搜索“Git下载”<br>详细安装过程可查看：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html" target="_blank" rel="noopener" 点击转跳""="">学为所用的详细Git安装过程</a></p>
 <h2 id="三、准备GitHub仓库"><a href="#三、准备GitHub仓库" class="headerlink" title="三、准备GitHub仓库"></a>三、准备GitHub仓库</h2><h3 id="1-注册GitHub账号"><a href="#1-注册GitHub账号" class="headerlink" title="1.注册GitHub账号"></a>1.注册GitHub账号</h3><p>官网链接：<a href="https://github.com" target="_blank" rel="noopener" title="点击转跳">GitHub官网</a></p>
-<h3 id="2-新建仓库"><a href="#2-新建仓库" class="headerlink" title="2.新建仓库"></a>2.新建仓库</h3><p>新建的仓库名字必须符合要求：用户名.github.io<br><img src="https://s1.ax1x.com/2020/07/10/UMMsIO.png" alt=""></p>
+<h3 id="2-新建仓库"><a href="#2-新建仓库" class="headerlink" title="2.新建仓库"></a>2.新建仓库</h3><p>新建的仓库名字必须符合要求：用户名.github.io<br><img data-src="https://s1.ax1x.com/2020/07/10/UMMsIO.png" alt=""></p>
 <h3 id="3-生成SSH-Key密钥并连接GitHub"><a href="#3-生成SSH-Key密钥并连接GitHub" class="headerlink" title="3.生成SSH Key密钥并连接GitHub"></a>3.生成SSH Key密钥并连接GitHub</h3><p><strong>查看本机是否存在SSH密钥</strong><br>打开之前安装的 Git Bash 运行如下命令：</p>
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></tbody></table></figure>
 <p>检查你本机用户home目录下是否存在.ssh目录，如果不存在目录则进行下一步，否则直接进入第三步操作。<br><strong>创建新的SSH密钥</strong><br>输入如下命令：</p>
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">"你的github邮箱"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#回车后将提示如下内容：</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span><br><span class="line"></span><br><span class="line"><span class="comment">#回车确认路径后输入密码和再次确认密码：</span></span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): [Type a passphrase]</span><br><span class="line">Enter same passphrase again: [Type passphrase again]</span><br><span class="line"></span><br><span class="line"><span class="comment">#输入完成之后，屏幕会显示如下信息：</span></span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:一串两位字符+你的邮箱</span><br><span class="line"></span><br><span class="line"><span class="comment">#成功生成密钥后输入以下命令将密钥拷贝到系统剪贴板</span></span><br><span class="line">clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></tbody></table></figure>
-<p><strong>在GitHub账户中添加公钥</strong><br>点击GitHub主页右上角的头像选择设置<br><img src="https://s1.ax1x.com/2020/07/11/UQUeyT.png" alt=""><br>左侧选择SSH and GPG keys并新建SSH KEY<br><img src="https://s1.ax1x.com/2020/07/11/UQUO74.png" alt=""><br>输入标题并粘贴之前负责的密匙点击添加<br><img src="https://s1.ax1x.com/2020/07/11/UQd3M6.png" alt=""></p>
+<p><strong>在GitHub账户中添加公钥</strong><br>点击GitHub主页右上角的头像选择设置<br><img data-src="https://s1.ax1x.com/2020/07/11/UQUeyT.png" alt=""><br>左侧选择SSH and GPG keys并新建SSH KEY<br><img data-src="https://s1.ax1x.com/2020/07/11/UQUO74.png" alt=""><br>输入标题并粘贴之前负责的密匙点击添加<br><img data-src="https://s1.ax1x.com/2020/07/11/UQd3M6.png" alt=""></p>
 <p><strong>测试连接</strong><br>输入如下命令测试连接，可能会要求输入之前设置的密码</p>
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果出现如下警告直接Yes回车</span></span><br><span class="line">The authenticity of host <span class="string">'github.com (000.000.000.000)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">RSA key fingerprint is 00:00:00:00:00:00:00:00:00:??:??:4d:eb:df:a6:48.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)?</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#出现如下信息则为连接成功</span></span><br><span class="line"><span class="string">Hi 你的github用户名! You’ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></tbody></table></figure>
 
@@ -143,7 +150,7 @@
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> install.sh hexo_win</span><br><span class="line"><span class="comment">#回车后如果提示一串红字可忽略，大致意思是hexoblog目录不存在会给你创建</span></span><br></pre></td></tr></tbody></table></figure>
 <p>当您看到出现<code>Please run hexo s to check it out!</code>的提示,证明您已经安装成功,此时你可以输入如下命令然后查看你的博客</p>
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> hexoblog</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
-<p>运行后会出现一段地址：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>   ，在浏览器输入该地址即可本地访问你的Hexo博客了，效果如下：<br><img src="https://s1.ax1x.com/2020/07/11/UQrCjI.png" alt=""></p>
+<p>运行后会出现一段地址：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>   ，在浏览器输入该地址即可本地访问你的Hexo博客了，效果如下：<br><img data-src="https://s1.ax1x.com/2020/07/11/UQrCjI.png" alt=""></p>
 <h2 id="五、部署Hexo博客到GitHub仓库"><a href="#五、部署Hexo博客到GitHub仓库" class="headerlink" title="五、部署Hexo博客到GitHub仓库"></a>五、部署Hexo博客到GitHub仓库</h2><p>可以参考hexo-script部署工具的<code>up.sh</code>工具一键部署或者使用<code>hexo d</code>指令部署</p>
 <h3 id="1-编辑配置文件"><a href="#1-编辑配置文件" class="headerlink" title="1.编辑配置文件"></a>1.编辑配置文件</h3><p>打开hexoblog下的<code>_config.yml</code>文件，推荐使用VScode或HBuilderX打开<br>找到deploy,它一般在最后一行,按照以下的格式修改即可</p>
 <figure class="highlight cs"><table><tbody><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 这里填你的仓库地址,建议使用SSH地址。如：https:<span class="comment">//github.com/用户名/用户名.github.io.git</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></tbody></table></figure>

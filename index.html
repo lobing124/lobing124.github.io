@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="e1ZVudNMMc">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -19,7 +20,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"lobing124.github.io","root":"/","scheme":"Muse","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"lobing124.github.io","root":"/","scheme":"Muse","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -33,7 +34,7 @@
 <link rel="canonical" href="http://lobing124.github.io/">
 
 
-<script class="page-configurations">
+<script data-pjax class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -47,6 +48,15 @@
   
 
 
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c714c70542299d45bda2d26ac287809d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -236,6 +246,20 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lobing124" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lobing124" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/sixiwenwu@vip.qq.com" title="E-Mail → sixiwenwu@vip.qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/yourname" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/yourname" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
+      </span>
+  </div>
   <div class="cc-license animated" itemprop="license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
@@ -294,10 +318,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-07-11 21:30:23 / 修改时间：22:35:30" itemprop="dateCreated datePublished" datetime="2020-07-11T21:30:23+08:00">2020-07-11</time>
+              <time title="创建时间：2020-07-11 21:30:23" itemprop="dateCreated datePublished" datetime="2020-07-11T21:30:23+08:00">2020-07-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-12 19:01:04" itemprop="dateModified" datetime="2020-07-12T19:01:04+08:00">2020-07-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -333,46 +363,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h3><p>修改<code>index-cover.ejs</code>文件</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//调整主页轮播图左右转跳的两个箭头显示相对背景圈圈偏上</span></span><br><span class="line">#prev-cover i {</span><br><span class="line">        margin-top: <span class="number">5.5</span>px;<span class="comment">//添加，让主页左跳按钮箭头下移</span></span><br><span class="line">    }</span><br><span class="line">#next-cover i {</span><br><span class="line">    margin-top: <span class="number">5.5</span>px;<span class="comment">//添加，让主页左跳按钮箭头下移</span></span><br><span class="line">    }<span class="comment">//将主页显示的“readstart”按钮修改为“enter blog”</span></span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-angle-double-down"</span>&gt;&lt;<span class="regexp">/i&gt;&lt;%- __('enter Blog') %&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>修改<code>footer.ejs</code>文件</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//将bg-color标签修改为footer-bg</span></span><br><span class="line">&lt;footer <span class="class"><span class="keyword">class</span></span>=<span class="string">"page-footer footer-bg"</span>&gt;</span><br><span class="line"><span class="comment">//注释掉总访问前的竖杠</span></span><br><span class="line">&lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;</span><br><span class="line">    &lt;!-- | --&gt;&amp;nbsp;<span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"far fa-eye"</span>&gt;</span></span></span><br><span class="line"><span class="xml">//删除网站运行时间的秒数，将“本站运行时间”修改为“本站已苟活”</span></span><br><span class="line"><span class="xml">if (startYear == todayYear) {</span></span><br><span class="line"><span class="xml">    document.getElementById("year").innerHTML = todayYear;</span></span><br><span class="line"><span class="xml">    document.getElementById("sitetime").innerHTML = "本站已苟活 " + diffDays + " 天 " + diffHours +</span></span><br><span class="line"><span class="xml">        " 小时 " + diffMinutes + " 分钟 ";//+ diffSeconds + " 秒";</span></span><br><span class="line"><span class="xml">  } else {</span></span><br><span class="line"><span class="xml">    document.getElementById("year").innerHTML = startYear + " - " + todayYear;</span></span><br><span class="line"><span class="xml">    document.getElementById("sitetime").innerHTML = "本站已苟活 " + diffYears + " 年 " + diffDays +</span></span><br><span class="line"><span class="xml">    " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 ";//  + diffSeconds + " 秒";</span></span><br><span class="line"><span class="xml">    }</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>修改<code>matery.css</code>文件</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/* 新建标签手机菜单上背景 */</span></span><br><span class="line">.mobile-bg{</span><br><span class="line">    background:rgb(<span class="number">221</span>, <span class="number">221</span>, <span class="number">221</span>);</span><br><span class="line">    opacity: <span class="number">0.9</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">/* 新建标签页尾背景 */</span></span><br><span class="line">.footer-bg{</span><br><span class="line">    background:url(https:<span class="comment">//s1.ax1x.com/2020/07/11/U1pjW6.png);</span></span><br><span class="line">}</span><br><span class="line"><span class="comment">/* 修改nav背景 */</span></span><br><span class="line">.bg-color {</span><br><span class="line">    background:rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>)</span><br><span class="line">}</span><br><span class="line"><span class="comment">/* 修改网页下方进度指示条的颜色 */</span></span><br><span class="line">.progress-bar {</span><br><span class="line">    background: linear-gradient(to right, #ffffff 0%, #000000 100%);</span><br><span class="line">}</span><br><span class="line"><span class="comment">/* 修改删除如下属性以移除主页轮播图的遮蔽效果 */</span></span><br><span class="line">.bg-cover:after {</span><br><span class="line">.bg-cover:before,</span><br><span class="line">.bg-cover:after {</span><br><span class="line"><span class="comment">/* 修改回到顶部按钮背景 */</span></span><br><span class="line">.top-scroll .btn-floating {</span><br><span class="line">	background: rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>);</span><br><span class="line">	}</span><br><span class="line"><span class="comment">/* 手机界面侧边栏头像位置调整为居中 */</span></span><br><span class="line">header .side-nav .mobile-head img {</span><br><span class="line">    margin-top: <span class="number">30</span>px;</span><br><span class="line">    margin-left: <span class="number">70</span>px;</span><br><span class="line">	}</span><br><span class="line"><span class="comment">/* 手机界面侧边栏名字位置调整为居中，字体颜色为黑色 */</span></span><br><span class="line">header .side-nav .mobile-head .logo-name {</span><br><span class="line">	margin-top: <span class="number">-30</span>px;</span><br><span class="line">	margin-left: <span class="number">70</span>px;</span><br><span class="line">	color: rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">	}</span><br><span class="line"><span class="comment">/* 手机界面侧边栏签名调整为居中，字体颜色为黑色 */</span></span><br><span class="line">header .side-nav .mobile-head .logo-desc {</span><br><span class="line">    color: rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">    text-align: center;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>修改<code>bg-cover-content.ejs</code>文件</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//将主页副标题下的轮播文字修改为每日一诗，但是要将`subtitle:false`才能生效</span></span><br><span class="line">&lt;% } <span class="keyword">else</span> { %&gt;</span><br><span class="line">    &lt;!-- &lt;%= config.description %&gt; --&gt;<span class="comment">//注释掉先前的</span></span><br><span class="line">    &lt;%- <span class="string">'&lt;span id="jinrishici-sentence"&gt;正在加载今日诗词....&lt;/span&gt;'</span> %&gt;<span class="comment">//修改为每日一诗的语句块</span></span><br><span class="line">&lt;% } %&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>修改<code>header.ejs</code>文件</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//去掉PC界面logo旁的头像</span></span><br><span class="line">&lt;!-- &lt;% <span class="keyword">if</span> (theme.logo !== <span class="literal">undefined</span> &amp;&amp; theme.logo.length &gt; <span class="number">0</span>) { %&gt;</span><br><span class="line">		&lt;img src=<span class="string">"&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for(theme.logo) %&gt;"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"logo-img"</span> alt=<span class="string">"LOGO"</span>&gt;</span><br><span class="line">	&lt;% } %&gt; --&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>修改<code>mobile-nav.ejs</code>文件</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//修改手机界面侧边菜单签名</span></span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"logo-desc"</span>&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (config.description &amp;&amp; config.description.length &gt; <span class="number">0</span>) { %&gt;</span><br><span class="line">    &lt;%= config.description %&gt;</span><br><span class="line">    &lt;% } <span class="keyword">else</span> { %&gt;</span><br><span class="line">    不是吧，不是吧？真有人看我的博客？</span><br><span class="line">    &lt;% } %&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/修改背景标签，将bg-color标签改为mobile-bg</span></span><br><span class="line"><span class="regexp">&lt;div class="mobile-head mobile-bg"&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>修改<code>back-top.ejs</code>文件</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//将回到顶部的按钮修改为fa-angle-double-up向上箭头与ENTER BLOG的a-angle-double-down向下箭头同款</span></span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-angle-double-up"</span>&gt;&lt;<span class="regexp">/i&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+          <p>记录主题的优化与修改</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/11/matery-change/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -422,7 +421,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-12 10:58:44" itemprop="dateModified" datetime="2020-07-12T10:58:44+08:00">2020-07-12</time>
+                <time title="修改时间：2020-07-12 18:59:48" itemprop="dateModified" datetime="2020-07-12T18:59:48+08:00">2020-07-12</time>
               </span>
 
           
@@ -450,36 +449,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="选择Hexo支持的主题"><a href="#选择Hexo支持的主题" class="headerlink" title="选择Hexo支持的主题"></a>选择Hexo支持的主题</h3><p>Hexo主题官网：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
-<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>在主题详情页一般会有提示，将主题git到hexoblog下的themes目录下</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/主题链接 /themes/主题文件夹</span><br></pre></td></tr></tbody></table></figure>
-
-
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>Hexo更改主题后启动服务器，界面显如下字符:</p>
-<p><code>extends includes/layout.pug block content include includes/recent-posts.pug include includes/partial</code></p>
-<p>解决方案:</p>
-<p>执行如下命令</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br></pre></td></tr></tbody></table></figure>
-<p>再重新清理缓存<code>hexo c</code>生成静态文件<code>hexo g</code>即可</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+          <p>修改Hexo静态博客的主题</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/11/hexo-themes/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -521,10 +499,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-07-11 13:39:18 / 修改时间：19:52:36" itemprop="dateCreated datePublished" datetime="2020-07-11T13:39:18+08:00">2020-07-11</time>
+              <time title="创建时间：2020-07-11 13:39:18" itemprop="dateCreated datePublished" datetime="2020-07-11T13:39:18+08:00">2020-07-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-12 18:59:34" itemprop="dateModified" datetime="2020-07-12T18:59:34+08:00">2020-07-12</time>
+              </span>
 
           
   
@@ -620,7 +604,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-12 13:42:02" itemprop="dateModified" datetime="2020-07-12T13:42:02+08:00">2020-07-12</time>
+                <time title="修改时间：2020-07-12 19:06:44" itemprop="dateModified" datetime="2020-07-12T19:06:44+08:00">2020-07-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -657,60 +641,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="一、配置nodejs环境"><a href="#一、配置nodejs环境" class="headerlink" title="一、配置nodejs环境"></a>一、配置nodejs环境</h2><h3 id="1-下载安装"><a href="#1-下载安装" class="headerlink" title="1.下载安装"></a>1.下载安装</h3><p>官网下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br>安装完成后cmd输入<code>node -v</code>可查看版本号说明安装成功</p>
-<h3 id="2-修改npm的模块目录和缓存目录"><a href="#2-修改npm的模块目录和缓存目录" class="headerlink" title="2.修改npm的模块目录和缓存目录"></a>2.修改npm的模块目录和缓存目录</h3><p>Npm的缓存文件和模块默认是存储在C盘，将其模块目录和缓存目录设置到nodejs文件夹下方便以后操作，nodejs默认安装目录为<code>C:\Program Files\nodejs</code><br>在nodejs文件夹下，创建两个为文件夹<code>node_global</code>和<code>node_cecal</code><br>使用下面命令将npm的全局模块目录和缓存目录配置到我们刚才创建的那两个目录</p>
-<ul>
-<li><strong>npm config set prefix “node_global文件夹的路径”</strong></li>
-<li><strong>npm config set cache “node_cache文件夹的路径”</strong><br>控制面板-系统和安全-系统高级系统设置—环境变量</li>
-<li>新增系统变量<code>NODE_PATH</code>，变量值填写nodejs目录下的<code>node_modules</code>文件夹路径</li>
-<li>系统Path变量添加之前创建的<code>node_global</code>目录<br>cmd输入<code>node</code>再输入<code>require</code>显示如下说明配置完成<br><img src="https://s1.ax1x.com/2020/07/10/UM2tYT.png" alt=""></li>
-</ul>
-<h2 id="二、安装Git"><a href="#二、安装Git" class="headerlink" title="二、安装Git"></a>二、安装Git</h2><h3 id="1-下载安装-1"><a href="#1-下载安装-1" class="headerlink" title="1.下载安装"></a>1.下载安装</h3><p>官网下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a><br>自行下载最好准备科学工具，推荐在官网查看最新的版本后前往百度搜索“Git下载”<br>详细安装过程可查看：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html" target="_blank" rel="noopener" 点击转跳""="">学为所用的详细Git安装过程</a></p>
-<h2 id="三、准备GitHub仓库"><a href="#三、准备GitHub仓库" class="headerlink" title="三、准备GitHub仓库"></a>三、准备GitHub仓库</h2><h3 id="1-注册GitHub账号"><a href="#1-注册GitHub账号" class="headerlink" title="1.注册GitHub账号"></a>1.注册GitHub账号</h3><p>官网链接：<a href="https://github.com" target="_blank" rel="noopener" title="点击转跳">GitHub官网</a></p>
-<h3 id="2-新建仓库"><a href="#2-新建仓库" class="headerlink" title="2.新建仓库"></a>2.新建仓库</h3><p>新建的仓库名字必须符合要求：用户名.github.io<br><img src="https://s1.ax1x.com/2020/07/10/UMMsIO.png" alt=""></p>
-<h3 id="3-生成SSH-Key密钥并连接GitHub"><a href="#3-生成SSH-Key密钥并连接GitHub" class="headerlink" title="3.生成SSH Key密钥并连接GitHub"></a>3.生成SSH Key密钥并连接GitHub</h3><p><strong>查看本机是否存在SSH密钥</strong><br>打开之前安装的 Git Bash 运行如下命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></tbody></table></figure>
-<p>检查你本机用户home目录下是否存在.ssh目录，如果不存在目录则进行下一步，否则直接进入第三步操作。<br><strong>创建新的SSH密钥</strong><br>输入如下命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">"你的github邮箱"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#回车后将提示如下内容：</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span><br><span class="line"></span><br><span class="line"><span class="comment">#回车确认路径后输入密码和再次确认密码：</span></span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): [Type a passphrase]</span><br><span class="line">Enter same passphrase again: [Type passphrase again]</span><br><span class="line"></span><br><span class="line"><span class="comment">#输入完成之后，屏幕会显示如下信息：</span></span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:一串两位字符+你的邮箱</span><br><span class="line"></span><br><span class="line"><span class="comment">#成功生成密钥后输入以下命令将密钥拷贝到系统剪贴板</span></span><br><span class="line">clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></tbody></table></figure>
-<p><strong>在GitHub账户中添加公钥</strong><br>点击GitHub主页右上角的头像选择设置<br><img src="https://s1.ax1x.com/2020/07/11/UQUeyT.png" alt=""><br>左侧选择SSH and GPG keys并新建SSH KEY<br><img src="https://s1.ax1x.com/2020/07/11/UQUO74.png" alt=""><br>输入标题并粘贴之前负责的密匙点击添加<br><img src="https://s1.ax1x.com/2020/07/11/UQd3M6.png" alt=""></p>
-<p><strong>测试连接</strong><br>输入如下命令测试连接，可能会要求输入之前设置的密码</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果出现如下警告直接Yes回车</span></span><br><span class="line">The authenticity of host <span class="string">'github.com (000.000.000.000)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">RSA key fingerprint is 00:00:00:00:00:00:00:00:00:??:??:4d:eb:df:a6:48.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)?</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#出现如下信息则为连接成功</span></span><br><span class="line"><span class="string">Hi 你的github用户名! You’ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="四、安装HEXO博客"><a href="#四、安装HEXO博客" class="headerlink" title="四、安装HEXO博客"></a>四、安装HEXO博客</h2><p>非科学网络环境后续的步骤下载很慢的解决办法参考：<a href="https://www.cnblogs.com/luyuandatabase/p/12145707.html" target="_blank" rel="noopener" title="点击转跳">水火和牛npm使用国内淘宝镜像的方法</a><br>部署工具hexo-script-win的参考文档：<a href="https://hexoscript.gitbook.io/hexo-script/v/1.3-1/shi-yong-bu-zhou/zhun-bei-gong-ju" target="_blank" rel="noopener">hexo-script</a></p>
-<h3 id="1-下载hexo-script-win的install-sh工具"><a href="#1-下载hexo-script-win的install-sh工具" class="headerlink" title="1.下载hexo-script-win的install.sh工具"></a>1.下载hexo-script-win的<code>install.sh</code>工具</h3><p>下载地址：<a href="https://github.com/kjhuanhao/hexo-script/releases" target="_blank" rel="noopener">releases</a><br>储存到要存放博客的目录A，该工具会在A目录下生成hexoblog文件夹存放博客文件。</p>
-<h3 id="2-一键安装HEXO博客"><a href="#2-一键安装HEXO博客" class="headerlink" title="2.一键安装HEXO博客"></a>2.一键安装HEXO博客</h3><p>在存放<code>install.sh</code>的目录右键“Git Bash Here”，输入如下命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> install.sh hexo_win</span><br><span class="line"><span class="comment">#回车后如果提示一串红字可忽略，大致意思是hexoblog目录不存在会给你创建</span></span><br></pre></td></tr></tbody></table></figure>
-<p>当您看到出现<code>Please run hexo s to check it out!</code>的提示,证明您已经安装成功,此时你可以输入如下命令然后查看你的博客</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> hexoblog</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
-<p>运行后会出现一段地址：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>   ，在浏览器输入该地址即可本地访问你的Hexo博客了，效果如下：<br><img src="https://s1.ax1x.com/2020/07/11/UQrCjI.png" alt=""></p>
-<h2 id="五、部署Hexo博客到GitHub仓库"><a href="#五、部署Hexo博客到GitHub仓库" class="headerlink" title="五、部署Hexo博客到GitHub仓库"></a>五、部署Hexo博客到GitHub仓库</h2><p>可以参考hexo-script部署工具的<code>up.sh</code>工具一键部署或者使用<code>hexo d</code>指令部署</p>
-<h3 id="1-编辑配置文件"><a href="#1-编辑配置文件" class="headerlink" title="1.编辑配置文件"></a>1.编辑配置文件</h3><p>打开hexoblog下的<code>_config.yml</code>文件，推荐使用VScode或HBuilderX打开<br>找到deploy,它一般在最后一行,按照以下的格式修改即可</p>
-<figure class="highlight cs"><table><tbody><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 这里填你的仓库地址,建议使用SSH地址。如：https:<span class="comment">//github.com/用户名/用户名.github.io.git</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="2-安装上传插件"><a href="#2-安装上传插件" class="headerlink" title="2.安装上传插件"></a>2.安装上传插件</h3><p>在<code>hexoblog根目录</code>打开Git Bash输入如下命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">国内镜像：cnpm install hexo-deployer-git --save</span><br><span class="line">非国内：npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="3-部署上传"><a href="#3-部署上传" class="headerlink" title="3.部署上传"></a>3.部署上传</h3><p>Hexo的常用命令:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">#在hexoblog根目录：</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment">#清除静态文件</span></span><br><span class="line">hexo g <span class="comment">#生成静态文件</span></span><br><span class="line">hexo server / hexo s <span class="comment">#本地预览静态文件</span></span><br><span class="line">hexo d <span class="comment">#将静态文件部署上传</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#可以使用如下命令部署或预览</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d <span class="comment">#上传</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s <span class="comment">#本地</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#出现如下提示则为上传成功：</span></span><br><span class="line">INFO  Deploy <span class="keyword">done</span>: git</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果报错了not found git的错误证明上传插件没有安装成功，尝试重新安装上传插件或使用up.sh上传</span></span><br></pre></td></tr></tbody></table></figure>
-<p>浏览器输入仓库地址查看部署情况：https://用户名.github.io</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+          <p>Windows10平台下Hexo静态博客的大致搭建流程，从环境准备到搭建成功预览，包括部署到GitHub以及可能出现的错误。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/10/windows-new-hexo/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -777,6 +716,26 @@
   </div>
 
         
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -791,6 +750,8 @@
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/next-theme/pjax@0/pjax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.15.0/lozad.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
@@ -802,8 +763,50 @@
 
 <script src="/js/next-boot.js"></script>
 
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
 
   
+  <script data-pjax>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
@@ -823,6 +826,7 @@
 
 
 
+    <div class="pjax">
   
 
   
@@ -841,5 +845,6 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
+    </div>
 </body>
 </html>
