@@ -370,7 +370,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-11
+                    2020-07-12
                 </div>
                 
 
@@ -389,7 +389,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Hexo主题官网：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
+                <h3 id="选择Hexo支持的主题"><a href="#选择Hexo支持的主题" class="headerlink" title="选择Hexo支持的主题"></a>选择Hexo支持的主题</h3><p>Hexo主题官网：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>在主题详情页一般会有提示，将主题git到hexoblog下的themes目录下</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/主题链接 /themes/主题文件夹<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>Hexo更改主题后启动服务器，界面显如下字符:</p>
+<p><code>extends includes/layout.pug block content include includes/recent-posts.pug include includes/partial</code></p>
+<p>解决方案:</p>
+<p>执行如下命令</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>再重新清理缓存<code>hexo c</code>生成静态文件<code>hexo g</code>即可</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -506,6 +514,52 @@
     
 
     
+
+    
+        <style>
+    .mvaline-card {
+        margin: 1.5rem auto;
+    }
+
+    .mvaline-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+</style>
+
+<div class="card mvaline-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="mvcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/lobing124/lobing124.github.iohttps://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js"></script>
+<script>
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'GwSx3GX64bhiaf11JikMv6IT-gzGzoHsz',
+        appKey: 'uTsdFqJyAoqlb7L8GvKM08xV',
+        mode: 'xCss',
+        placeholder: '点击评论...',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'bfdcdd733519146457cda38d246c8929',
+        tagMeta: ["博主", "小伙伴", "访客"],
+        master: ["bfdcdd733519146457cda38d246c8929"],
+        friends: [""],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
+    });
+</script>
 
     
 
